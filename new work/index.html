@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>indiUber</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylesheets/landing.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+  			$('.icon').click(function(){
+  				$('.icon').toggleClass('active')
+  			})
+  		})
+  	</script>
+</head>
+<body>
+ <!-- navbar starts here -->
+<nav id="nav" class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="brand" class="navbar-brand" href="#"><strong>indiUber</strong></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Ride <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Drive</a></li>
+       <!--  <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+
+      <!-- <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></a></li>
+        <li class="b_driver"><button id="butn"  class="btn btn-default btn-md bAD">Become a driver</button></li>
+          <li>
+          <a href="#"> 
+            <!--<div class="icon">-->
+            <!--  <div class="hamburger"></div>-->
+            <!--</div>-->
+          </a>  
+        </li>
+
+
+     <!--    <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div class="icon">
+		<div class="hamburger"></div>
+		</div> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+ </div>
+</nav>
+
+
+<!-- first row -->
+
+<div id="rowSpacing"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<!-- <div class="container"> -->
+				<!-- <div class="container"> -->
+					<div><h1 style="font-family: raleway;">"Hum India ka Uber banayenge!"</h1></div>
+
+					<div><h3><span style="font-family: raleway;"> We'll call it indiUber... </span><span id="pepe" class="write"></span></h3></div>
+				<!-- </div> -->
+				
+			<!-- </div> -->
+			<!-- <div class="container-fluid"> -->
+				<div style="padding-top: 50px;"></div>
+				<div role="img" id="resBack"  style="background-position: center; background-image: url('imgs/indiuber.jpg'); background-repeat: no-repeat; background-size: cover; width: 100%; height: 400px; padding-top:  border: none;"></div>	
+			<!-- </div> -->
+			
+		</div>
+		<div  class="col-md-4" style="border-left: 2px solid rgb(241, 241, 241)">
+			<!-- <div class="container"> -->
+				<div>
+					<h4 style="text-transform: uppercase; padding-left: 2px; margin-left: 2px; font-family: raleway"><span><img style="height: 30px; width: 30px;" src="imgs/ride.png"></span> Ride with indiUber<br></h4>
+				</div>
+				<div>
+					<h4 style="margin-left: 60px; font-family: raleway "><a style="color: #087209; text-transform: uppercase;" href="#">Sign in > </a></h4>
+				</div>
+				<hr>
+				<div>
+					<h4 style="text-transform: uppercase; padding-left: 2px; margin-left: 2px; font-family: raleway"><span><img style="height: 30px; width: 30px;" src="imgs/signup.png"></span>Sign up to drive<br></h4>
+				</div>
+				<hr>
+				 <form>
+				 <div class="form-group" style="font-family: raleway;">
+				 	<input id="inputSpace" class="form-control" type="text" name="fName" placeholder="First name">
+				 </div>
+				 <div class="form-group" style="font-family: raleway;">
+				 	<input id="inputSpace" class="form-control" type="text" name="lName" placeholder="Last name">
+				 </div>
+				 <div class="form-group" style="font-family: raleway;">
+				 	<input id="inputSpace" class="form-control" type="email" name="email" placeholder="Email">
+				 </div>	
+				 <div class="form-group" style="font-family: raleway;">
+				 	<input id="inputSpace" class="form-control" type="text" name="phone" placeholder="phone">
+				 </div>
+				 <div class="form-group" style="font-family: raleway;">
+				 	<input id="inputSpace" class="form-control" type="text" name="createdPass" placeholder="Create a Password">
+				 </div>
+				 <button id="butn2" class="btn btn-default btn-block" style="font-family: raleway;">Sign up to drive<span class="glyphicon glyphicon-arrow-right pull-right" aria-hidden="true"></span></button>
+				 </form>
+			<!-- </div> -->
+		</div>
+	</div>
+</div>
+
+ <!-- second row -->
+<div id="rowSpacing"></div>
+
+ <div class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col col-lg-4 col-sm-6">
+				<div  class="thumbnail"  id="thumbNoBorder">
+					<img src="imgs/easy_finger_snap.png" >
+				</div><!-- class thumbnail ends here-->
+				<div>
+					<h4 style="padding-top: 20px; text-align: center; font-family: raleway">Easiest than all!</h4>
+				<p style="font-family: raleway">
+					 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				</div>
+				<div style="padding-top: 50px;">
+					<button id="butn2" class="btn btn-default btn-block">Reasons to ride<span class="glyphicon glyphicon-arrow-right pull-right" aria-hidden="true"></span></button>
+				</div>
+				
+			</div>
+			<div class="col col-lg-4 col-sm-6">
+				<div  class="thumbnail"  id="thumbNoBorder">
+					<img src="imgs/anytime.png" >
+				</div><!-- class thumbnail ends here-->
+				<div>
+					<h4 style="padding-top: 60px;  text-align: center; font-family: raleway ">Easiest than all!</h4>
+				<p style="font-family: raleway">
+					 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				</div>
+				
+			</div>
+			<div class="col col-lg-4 col-sm-6">
+				<div  class="thumbnail" id="thumbNoBorder">
+					<img src="imgs/piggyBank.png" >
+				</div><!-- class thumbnail ends here-->
+				<div>
+					<h4 style="padding-top: 60px; text-align: center; font-family: raleway ">Easiest than all!</h4>
+				<p style="font-family: raleway">
+					 ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				</div>			
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- third row -->
+
+<div id="rowSpacing"></div>
+
+
+<div class="newContainer">
+	<div class="container" >
+		<div class="row">
+			<div class="col-md-12">
+			<!-- 	<div class="container"> -->
+					<div id="content">
+						<div class="caption">
+							<h3 id="headingOfRowThird">Our community</h3>
+						</div>
+						<p>
+							  Lorem ipsum dolor sit amet, consectetur adipisicing elit<br> sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua<br>. Ut enim ad minim ve
+						</p>
+						<button  id="butn2" class="btn btn-default btn-md readStories">Read stories<span class="glyphicon glyphicon-arrow-right pull-right" aria-hidden="true"></span></button>
+					</div>
+				<!-- </div> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- fourth row -->
+<div id="rowSpacing"></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<h4 id="headingOfRowFourthSub">Pricing</h4>
+			<h2 id="headingOfRowFourth">get a fare estimate</h2>
+	
+			<form id="formOfRowFourth">
+				 <div class="form-group">
+				 	<input id="inputSpaceNew" class="form-control" type="text" name="startPoint" placeholder="Enter pickup location">
+				 </div>
+				 <div  class="form-group">
+				 	<input id="inputSpaceNew" class="form-control" type="text" name="destination" placeholder="Enter destination">
+				 </div>
+				  <button id="butn2" class="btn btn-default btn-block">Go<span class="glyphicon glyphicon-arrow-right pull-right" aria-hidden="true"></span></button>
+			</form>
+		</div>
+		<div class="col-md-8">
+		   	<div id="map"></div>
+		    <script>
+		      function initMap() {
+		        var uluru = {lat: 22.719568, lng: 75.857727};
+		        var map = new google.maps.Map(document.getElementById('map'), {
+		          zoom: 11,
+		          center: uluru
+		        });
+		        var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+		      }
+		    </script>
+		    <script async defer
+		    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlXnosdRGaPfqAgUHhtltHVpQ6FI53mfk&callback=initMap">
+		    </script>
+      	</div>
+	</div>
+</div>
+
+<div id="rowSpacing"></div>
+
+<!-- fifth row -->
+
+<div class="fifthRowImg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="contentFifthRow">
+					<div class="caption">
+						<h3 id="headingOfRowFifth"> Drive when you want<br>
+							Make what you need</h3>
+					</div>
+					<div id="rowSpacing"></div>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit<br> sed do eiusmod
+					tempor incididunt ut labore <br>et dolore magna aliqua. Ut enim ad minim ve
+					</p>
+					<button id="butn2" class="btn btn-default btn-md readStories">Reasons to drive<span class="glyphicon glyphicon-arrow-right pull-right" aria-hidden="true"></span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- sixth row -->
+
+<div id="rowSpacing"></div>
+
+<div class="container">
+	<div id="rowSpacing"></div>
+		<h4 id="headingOfRowFourthSub">At the wheels</h4>
+		<h2 id="headingOfRowFourth">Meet our drivers</h2>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-4">
+			<div class="thumbnail" id="thumbNoBorder">
+				<img src="imgs/driver1.jpeg">
+			</div>
+			<div id="rowSpacing"></div>
+			<div class="container">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do eiusmod
+				tempor incidi<br>dunt ut labore et dolore magna aliqua. Ut <br>enim ad minim veniam,
+				quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo
+				</p>
+
+				<h4 id="headingOfRowSixth" ><i><span id="spanRowSixth">Katrina</span>, Mother and Seattle partner</i></h4>
+			</div>
+			
+		</div>
+		<div class="col-lg-4">
+			<div class="thumbnail"  id="thumbNoBorder">
+				<img src="imgs/driver2.jpeg" id="imgDriverTwo">
+			</div>
+			<div id="rowSpacing"></div>
+			<div class="container">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do eiusmod
+				tempor incidi<br>dunt ut labore et dolore magna aliqua. Ut <br>enim ad minim veniam,
+				quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo
+				</p>
+
+				<h4 id="headingOfRowSixth" ><i><span id="spanRowSixth">Katrina</span>, Mother and Seattle partner</i></h4>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="thumbnail"  id="thumbNoBorder">
+				<img src="imgs/driver3.jpeg">
+			</div>
+			<div id="rowSpacing"></div>
+			<div class="container">
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing<br> elit, sed do eiusmod
+				tempor incidi<br>dunt ut labore et dolore magna aliqua. Ut <br>enim ad minim veniam,
+				quis nostrud exercitation ullamco <br>laboris nisi ut aliquip ex ea commodo
+				</p>
+
+				<h4 id="headingOfRowSixth" ><i><span id="spanRowSixth">Katrina</span>, Mother and Seattle partner</i></h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- seventh row -->
+
+<div id="rowSpacing"></div>
+
+<!-- <div id="outerRowSeventh"> -->
+
+<div id="rowSpacing"></div>
+	<div class="container"> 
+		<div class="row">
+			<div class="col-md-8">
+				<div class="thumbnail"  id="thumbNoBorder">
+					<img src="imgs/uberApp.jpg" >
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div id="divRowSeventh">
+					<h4 id="headingOfRowFourthSub">The new app</h4>
+					<h2 id="headingOfRowFourth">Gets you there faster</h2>
+				</div>
+				<div id="divRowSeventh">
+					<p id="content">
+						The updated indiUber app is rolling out now to cities around the world. And it’s filled with new features that make getting where you want to go faster and easier.
+					</p>
+				</div>
+				<div>
+					<h4><a id="linkToApp"  href="#">See what's new > </a></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- eighth row -->
+
+<div id="rowSpacing"></div>
+
+<div class="container" id="content">
+	<div id="divRowEighth">
+		<h4 id="headingOfRowFourthSub">Now arriving</h4>
+		<h2 id="headingOfRowFourth">Safe and modern cities</h2>
+	</div>
+<div id="rowSpacing"></div>
+	<div class="row">
+	<div class="col-md-2">
+		<div class="thumbnail"  id="thumbNoBorder">
+			<img src="imgs/city.png">
+		</div>
+	</div>
+		<div class="col-md-4">
+			<h3 class="caption">Helping cities thrive</h3>
+			<p>
+				A city with Uber gives people more ways to make money,<br>has fewer drunk drivers on the road, and <br>provides transportation anywhere, anytime.
+			</p>
+		</div>
+		<div class="col-md-2" id="leftBorder">
+			<div class="thumbnail"  id="thumbNoBorder">
+				<img src="imgs/safety.png">
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h3 class="caption">Helping cities thrive</h3>
+
+			<p>A city with Uber gives people more ways to make money,<br>has fewer drunk drivers on the road, and <br>provides transportation anywhere, anytime.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- footer -->
+
+<div id="rowSpacing"></div>
+
+<div  style="background-color: black;">
+	<div id="work" class="container" >
+	<div id="rowSpacing"></div>
+		<div class="row" style="border-bottom: 2px solid #bcbcba; padding-bottom: 20px;">
+			<div class="col-md-4">
+				<h1 style="color: #fff;">indiuber</h1>
+			</div>
+			<div class="col-md-4">
+				<button id="butnFooter"  style="width: 198.5px; " class="btn btn-default btn-lg">sign up</button>
+			</div>
+			<div class="col-md-4">
+				<button id="butnFooter"  class="btn btn-default btn-lg">Become a driver</button>
+			</div>		
+		</div>
+
+		<!-- second row (footer) -->
+
+		<div id="rowSpacing"></div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<a href="#" <p style="font-family: raleway; color: #fff;"><span class="glyphicon glyphicon-map-marker" ></span> Enter your location</p></a>
+				
+				<div style="padding-top: 50px;"></div>
+				<a href="#"><p style="font-family: raleway; color: #fff;"><span class="glyphicon glyphicon-globe" ></span> English</p></a>
+				<div style="padding-top: 50px;"></div>
+				<a href="#"><p style="font-family: raleway; color: #fff;"><span class="glyphicon glyphicon-question-sign" ></span> Help</p></a>
+				<div style="padding-top: 50px;"></div>
+				
+			</div>
+			
+				<div class="col-md-4">
+					<a href="#" <p style="font-family: raleway; color: #fff;"><span class="glyphicon glyphicon-map-marker" ></span> Enter your location</p></a>
+					
+					<div style="padding-top: 50px;"></div>
+					<a href="#"><p style="font-family: raleway; color: #fff;"><span class="glyphicon glyphicon-globe" ></span> English</p></a>
+					<div style="padding-top: 50px;"></div>
+					<a href="#"><p style="font-family: raleway; color: #fff;"><span class="glyphicon glyphicon-question-sign" ></span> Help</p></a>
+					<div style="padding-top: 50px;"></div>
+					
+				</div>
+					<div class="col-md-4">
+					<p style="color: white;">This project is inspired from </p>
+					<div style="padding-top: 30px;"><p><a href="https://www.youtube.com/channel/UCXgGY0wkgOzynnHvSEVmE3A">Hitesh Choudhary sir</a></p></div>
+					<div style="padding-top: 30px;"><p><a href="https://www.youtube.com/watch?v=67ZAho8NQXo&t=311s">tvf's pitchers!</a></p></div>
+					<div style="padding-top: 30px;"><p><a href="https://www.uber.com/en-IN/">and uber. Offcourse!</a></p></div>
+				</div>
+			</div>
+		</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- typejs -->
+<script type="text/javascript" src="js/particles.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript">
+	$(function(){
+        $(".write").typed({
+            strings: ["Pe pe Pe pe...", "Pe pe Pe pe...."],
+            typeSpeed: 150,
+            loop: true,
+        });
+    });
+</script>
+</body>
+</html>
