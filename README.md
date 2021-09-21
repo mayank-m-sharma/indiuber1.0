@@ -1,5 +1,5 @@
 # indiuber1.0
-a simple frontend project, based on uber's website
+a simple HTML CSS based UI of UBER
 ![uber_ss](https://user-images.githubusercontent.com/30652500/31093307-29f03ab4-a766-11e7-9d85-6647c66c4188.png)
 
 ![uber_ss1](https://user-images.githubusercontent.com/30652500/31093310-2a0311a2-a766-11e7-80e2-b3535df36bf6.png)
